@@ -1,24 +1,24 @@
-\name{our_package-package}
-\alias{our_package-package}
-\alias{our_package}
+\name{ourpackage-package}
+\alias{ourpackage-package}
+\alias{ourpackage}
 \docType{package}
 \title{
-\packageTitle{our_package}
+\packageTitle{ourpackage}
 }
 \description{
-\packageDescription{our_package}
+\packageDescription{ourpackage}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{our_package}
-\packageIndices{our_package}
+\packageDESCRIPTION{ourpackage}
+\packageIndices{ourpackage}
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-\packageAuthor{our_package}
+\packageAuthor{ourpackage}
 
-Maintainer: \packageMaintainer{our_package}
+Maintainer: \packageMaintainer{ourpackage}
 }
 \references{
 ~~ Literature or other references for background information ~~
