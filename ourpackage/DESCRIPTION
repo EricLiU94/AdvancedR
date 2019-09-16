@@ -7,5 +7,6 @@ Author: c(person("Eric", "Kamphuis", email = "erika464@student.liu.se", role = c
              person("Julia, "Lindohf", email = "julso810@student.liu.se", role = c("aut", "cre")))
 Maintainer: Eric Kamphuis <erika464@student.liu.se>
 Description: At the moment the package does not do anything.
-License: MIT + file LICENSE
+License: GPL-3
+Encoding: UTF-8
 RoxygenNote: 6.1.1
