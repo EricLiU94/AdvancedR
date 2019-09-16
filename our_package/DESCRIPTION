@@ -1,8 +1,0 @@
-Package: our_package
-Type: Package
-Title: Our package
-Version: 1.0
-Date: 2019-09-16
-Authors@R: c(person("Eric", "Kamphuis", email = "erika464@student.liu.se", role = c("aut", "cre")),
-             person("Julia, "Lindohf), email = "julso810", role = c("aut", "cre"))
-Description: At the moment the package does not do anything.
