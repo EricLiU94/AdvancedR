@@ -7,6 +7,7 @@
 #' @examples 
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
+#' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 euclidean <- function(a, b) {
   while (b != 0) {
     t <- b
@@ -15,4 +16,3 @@ euclidean <- function(a, b) {
   }
   return(a)
 }
-#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm

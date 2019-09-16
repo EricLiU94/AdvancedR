@@ -21,3 +21,6 @@ Find the largest common divisor
 euclidean(123612, 13892347912)
 euclidean(100, 1000)
 }
+\references{
+\url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+}
