@@ -1,2 +1,6 @@
 language: r
-cache: ourpackage
+cache: packages
+install:
+  - Rscript -e 'install.packages(c("devtools","roxygen2");devtools::install_deps("ourpackage")'
+script:
+  - Rscript -e 'devtools::check("ourpackage")'
