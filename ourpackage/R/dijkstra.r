@@ -1,6 +1,5 @@
 #' determine the shortest path to all the nodes, which are included in the network
 #' 
-#' @export Dijkstra 
 #' @param wiki_graph, a data frame, which contains three parameters: the connection path between two nodes and weight function
 #' @param the initial node, from which node, the trip begins 
 #' @return, the expected shortest path, towards each and every node, through the entire network 
