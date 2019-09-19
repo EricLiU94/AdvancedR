@@ -3,21 +3,18 @@
 \docType{data}
 \name{wiki_graph}
 \alias{wiki_graph}
-\title{Wiki_graph is a data set, which contains three row data}
-\format{An object of class \code{data.frame} with 18 rows and 3 columns.}
+\title{Wiki_graph is a data set, which contains three columns of data}
+\format{A data frame with 3 variables:
+\describe{
+  \item{v1}{the first node in a link}
+  \item{v2}{the second node in a link}
+  \item{w}{the weight of an edge between the linked nodes}
+}}
 \usage{
-data(dijkstra)
+wiki_graph
 }
 \description{
-Wiki_graph is a data set, which contains three row data
-}
-\examples{
-data(wiki_graph)
-wiki_graph is a data frame, which contains three row vectors
-v1 and v2, signifies the links
-w is a weight function
-
-
+Wiki_graph is a data set, which contains three columns of data
 }
 \references{
 \url{https://sv.wikipedia.org/wiki/Dijkstras_algoritm}
