@@ -1,14 +1,15 @@
 #' determine the shortest path to all the nodes, which are included in the network
 #' 
 #' @export dijkstra
-#' @param wiki_graph a data frame, which contains three parameters: the connection path between two nodes and weight function
-#' @param initial_node from which node, the trip begins 
+#' @param graph a data frame, which contains three parameters: the connection path between two nodes and weight function
+#' @param init_node from which node, the trip begins 
 #' @return the expected shortest journey, towards each and every node, through the entire network 
 
-dijkstra <- function (wiki_graph, initial_node)  {
-  nod<- as.matrix(wiki_graph[1])
-  lank<- as.matrix(wiki_graph[2])
-  vikt <- as.matrix( wiki_graph[3])
+dijkstra <- function (graph, init_node)  {
+  stopifnot(is.data.frame(graph), is.numeric(init_node), colnames(graph)==c("v1", "v2", "w"), nrow(graph) >= init_node)
+  nod<- as.matrix(graph[1])
+  lank<- as.matrix(graph[2])
+  vikt <- as.matrix( graph[3])
   
   # the total number of nodes
   l<- max(nod) 
@@ -29,20 +30,20 @@ dijkstra <- function (wiki_graph, initial_node)  {
   # Initially, each path, towards the final destination is assumed to be super long 
   dest_path<- numeric(l) +10000000000000
   # the path towards the inial node is zero 
-  dest_path[initial_node]<- 0 
+  dest_path[init_node]<- 0 
   
   # this variable is used to keep track of the nodes, whilst moving through the netword of nodes
   flag_nodes<-numeric (l) 
   # The inital node is denoted with 100, the rest are deoted as zeros 
-  flag_nodes[initial_node] <- 100
+  flag_nodes[init_node] <- 100
   #again, this is a comparison parameter 
   nod_min <-  10000 
   #this parameter is used as a marker, to indicate which nodes has just been visited 
-  Min_koord<-initial_node
+  Min_koord<-init_node
   
   ######################################################################################
   # to begin with, the first node is scrutinised by itself, without looping further to the next node 
-  test_vec<- temp_matris[initial_node,] # current_node: the starting node 
+  test_vec<- temp_matris[init_node,] # current_node: the starting node 
   
   for (i in 1:length(test_vec))  {
     ref_value <- 10000
