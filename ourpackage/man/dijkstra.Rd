@@ -4,12 +4,12 @@
 \alias{dijkstra}
 \title{determine the shortest path to all the nodes, which are included in the network}
 \usage{
-dijkstra(wiki_graph, initial_node)
+dijkstra(graph, init_node)
 }
 \arguments{
-\item{wiki_graph}{a data frame, which contains three parameters: the connection path between two nodes and weight function}
+\item{graph}{a data frame, which contains three parameters: the connection path between two nodes and weight function}
 
-\item{initial_node}{from which node, the trip begins}
+\item{init_node}{from which node, the trip begins}
 }
 \value{
 the expected shortest journey, towards each and every node, through the entire network
